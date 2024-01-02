@@ -17,18 +17,19 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:padding="40dp">
+                android:layout_height="300dp">
 
-                <Button
-                    android:id="@+id/button1"
+                <ImageView
+                    android:id="@+id/imageView"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_alignParentLeft="true"
-                    android:background="@drawable/left_arrow"
-                    android:contentDescription="Navigate to the top"
-                    android:text="^"
-                    android:textSize="24sp" />
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="12dp"
+                    app:srcCompat="@drawable/arrow3"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onImageView1Click"
+                    android:contentDescription="Image of user"/>
 
 
             </RelativeLayout>
@@ -36,7 +37,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="220dp"
                 android:background="#8A070707"
                 android:orientation="vertical">
 
@@ -74,47 +75,7 @@
                     android:textColor="#fff"
                     android:textSize="18sp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/imageView1"
-                        android:layout_width="74dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="8dp"
-                        android:background="@drawable/brezovica5" />
-
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
-                        android:background="@drawable/brezovica2" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
-                        android:background="@drawable/brezovica3" />
-
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
-                        android:background="@drawable/brezovica4" />
-
-                </LinearLayout>
 
                 <!-- Corrected closing tag for RelativeLayout -->
                 <RelativeLayout
@@ -147,7 +108,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="200dp"
                 android:background="#8A070707"
                 android:orientation="vertical">
 
@@ -185,54 +146,105 @@
                     android:textColor="#fff"
                     android:textSize="18dp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/prevalleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:orientation="vertical"
+            android:background="@drawable/gjeravica">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="40dp">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="200dp"
+                android:background="#8A070707"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Gjeravica"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
                     android:layout_marginTop="20dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_marginRight="40dp"
+                    android:text="Gjeravica is a mountain peak in Kosovo. It also is the second-highest mountain peak in the Accursed Mountains range and the Dinaric Alps range, after Maja Jezercë.It has an elevation of 2,656 m above sea level.Gjeravica is in the western part of Kosovo, in the municipality of Junik."
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
 
-                    <ImageView
-                        android:id="@+id/imageView10"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
-                        android:background="@drawable/rugova1" />
 
-                    <ImageView
-                        android:id="@+id/imageView11"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
-                        android:background="@drawable/rugova2" />
-
-                    <ImageView
-                        android:id="@+id/imageView12"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
-                        android:background="@drawable/rugova3" />
-
-                    <ImageView
-                        android:id="@+id/imageView13"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
-                        android:background="@drawable/rugova4" />
-
-                </LinearLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp" />
 
             </LinearLayout>
 
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/gjeravicaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:orientation="vertical"
+            android:background="@drawable/prevalle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="40dp">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="200dp"
+                android:background="#8A070707"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Prevalle"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:text=" Prevalla is a ski resort and touristic village which approximately is 30 km away from Prizren, Kosovo and about twelve kilometers from Brezovica, the largest ski center in Kosovo.Prevalla is a popular destination for hikers or skiers. The village borders a large forest."
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

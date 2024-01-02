@@ -1,93 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/imageView1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:context=".LoginActivity"
-    android:background="@drawable/background">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/background" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-
-    </LinearLayout>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/signUpButton"
-        style="@android:style/Widget.Button"
-        android:layout_width="330dp"
-        android:layout_height="50dp"
-        android:background="@drawable/login_button_background"
-        android:text="Signup"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        android:textStyle="bold"
-
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="412dp"
-        tools:ignore="MissingConstraints" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
-        style="@android:style/Widget.Button"
-        android:layout_width="330dp"
-        android:layout_height="50dp"
-        android:background="@drawable/login_button_background"
-        android:text="Login"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        android:textStyle="bold"
-
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="284dp"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextSurname"
-        android:layout_width="330dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_background1"
-        android:ems="10"
-        android:hint="Enter your password"
-        android:inputType="textPassword"
-        android:padding="16dp"
-        android:textColor="#5c5f72"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="188dp"
-        tools:ignore="MissingConstraints" />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundt"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Password"
+        android:text="Your Email"
+        android:layout_marginStart="50dp"
         android:textColor="#ffffff"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="160dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="70dp" />
 
     <EditText
         android:id="@+id/editTextTextEmail"
-        android:layout_width="330dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
+        android:layout_marginStart="45dp"
         android:background="@drawable/edittext_background1"
         android:ems="10"
         android:hint="Enter your email"
@@ -95,20 +29,44 @@
         android:padding="16dp"
         android:textColor="#5c5f72"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="94dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="8dp" />
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Email"
+        android:layout_marginStart="50dp"
+        android:text="Your Password"
         android:textColor="#ffffff"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="62dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_background1"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="#5c5f72"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="45dp"
+        android:background="@drawable/edittext_background1"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView9"
@@ -116,8 +74,20 @@
         android:layout_height="wrap_content"
         android:text="Don't have an account?"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="357dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="120dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/signUpButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background1"
+        android:text="Signup"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

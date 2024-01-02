@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="  Ulpiana Antike"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="italic"/>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Prizren is the second most populous city and municipality of Kosovo and seat of the eponymous municipality and district. It is located on the banks of the Prizren River between the foothills of the Sharr Mountains in southern Kosovo"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:clickable="true"
+        android:contentDescription="Image of user"
+        android:focusable="true"
+        android:onClick="onImageView1Click"
+        app:srcCompat="@drawable/arrow1" />
+</LinearLayout>
